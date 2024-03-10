@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+* .red-sec {
+  background-color: #f58235;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2px #e75b49;
+}
+* .red-sec .call {
+  padding: 5px;
+}
+* .red-sec .call h4 {
+  margin-left: 25%;
+}
+* .red-sec nav ul {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+}
+* .red-sec nav ul li a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #ffffff;
+}
+* .red-sec nav ul li:last-child {
+  margin-right: 60px;
+}
+
+.green-sec {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+}
+.green-sec nav ul {
+  display: flex;
+  list-style: none;
+  padding: 30px 0;
+}
+.green-sec nav ul li a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #ffffff;
+}
+.green-sec nav ul li:last-child {
+  margin-right: 80px;
+}
+.green-sec h3 {
+  margin: 30px 0;
+}
+
+.sec1 {
+  background-image: url("IMG/sandwich.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0 0 0;
+}
+.sec1 h1,
+.sec1 h3,
+.sec1 .inputs {
+  text-align: center;
+}
+.sec1 h1 {
+  font-family: Courier New;
+  font-size: 50px;
+  letter-spacing: 3px;
+  line-height: 1.6;
+}
+.sec1 h3 {
+  font-family: Verdana;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.sec1 .inputs {
+  background-color: rgba(255, 255, 255, 0.431372549);
+  padding: 8px 13px;
+  width: 65%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Add position relative for absolute positioning */
+}
+.sec1 .inputs input {
+  border: none;
+  width: 260px;
+  height: 28px;
+  padding: 6px 10px;
+  margin-left: 15px;
+}
+.sec1 .inputs input:nth-child(3) {
+  background-color: #f58235;
+  text-align: center;
+}
+.sec1 .search-input::after {
+  content: "\f002"; /* Unicode value for the search icon */
+  font-family: FontAwesome; /* Make sure to include the FontAwesome library */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #555;
+  pointer-events: none; /* Make sure the icon is not clickable */
+}
+.sec1 .big-board {
+  margin: 30px 0 0 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7333333333);
+}
+.sec1 .big-board .line {
+  background: #c919ff;
+  height: 1px;
+  width: 500px;
+  margin-left: 30%;
+}
+.sec1 .big-board h3 {
+  background-image: linear-gradient(to right, #646566, #323333, #000000);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: auto;
+  font-size: 36px;
+  font-family: Lucida Grande;
+  padding-top: 30px;
+}
+.sec1 .big-board .board {
+  display: flex;
+  padding: 20px;
+  /* Buttons
+  .btn1 {
+      border: 1px solid #c919ff;
+      color: #050505;
+      &:hover {
+          background: linear-gradient(to right, #1d73e4, #f165f1, #ff9fe7, #7effff);
+          transition: all 0.3s ease-in-out;
+      }*/
+}
+.sec1 .big-board .board div {
+  margin: 15px 16px;
+  border: solid 1px #555552;
+  overflow: hidden;
+}
+.sec1 .big-board .board div p {
+  color: #000;
+  padding: 16px 18px;
+}
+.sec1 .big-board .board div .btn {
+  /*width: 120px;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  transition: .5s;
+  margin-bottom: 22px;
+  font-size: 13px;
+  border-radius: 5px;
+  font-family: "Lato",sans-serif;
+  &:hover{
+  border: none;
+  color: white;
+  font-size: 15px;
+  transform:scale(1.1);*/
+  background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA 51%, #1D2B64 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border: none;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+.sec1 .big-board .board div .btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.sec1 img {
+  width: 100%;
+  height: 280px;
+  transition: 0.6s;
+}
+.sec1 img:hover {
+  transform: scale(1.1);
+  transition: all 0.6s ease-in-out;
+}
+
+.sec2 {
+  background-image: url("IMG/pizza.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+}
+.sec2 div {
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+}
+.sec2 div h2 {
+  font-size: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.sec2 div p {
+  letter-spacing: 3px;
+  margin: 10px 100px 0 100px;
+}
+.sec2 div img {
+  width: 300px;
+  height: 300px;
+  margin-left: 28px;
+  margin-top: 40px;
+  border: #555 solid 1px;
+  border-radius: 10px;
+  filter: blur(4px);
+  transition: 0.6s;
+}
+.sec2 div img:hover {
+  transition: all ease-in-out 0.6s;
+  cursor: pointer;
+  filter: none;
+}
+
+footer .one {
+  background: #474141;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0 30px 0;
+}
+footer .one h4 {
+  padding-bottom: 15px;
+}
+footer .one ul {
+  list-style-type: square;
+}
+footer .one ul li a {
+  text-decoration: none;
+}
+footer .one p {
+  width: 400px;
+}
+footer .two {
+  background: #1a1818;
+  height: 40px;
+  width: 100%;
+}
+footer .two p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
